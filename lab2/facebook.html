@@ -1,1 +1,98 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        body{
+            background-color: hwb(204 95% 3%);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: auto;
+        }
+        h1{
+            color: blue;
+        }
+        .h{
+            text-align: center;
+            font-size: 30px;
+            margin-right: 50px;
+        }
+        .vhod{
+            background-color: rgb(24,119,242);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 17px;
+            width: 100%;
+        }
+        .f{
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            padding: 40px;
+            width: 300px;
+        }
+        .f input{
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            font-size: 17px;
+            width: 100%;
+        }
+        .forgot{
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .forgot:hover{
+            text-decoration: underline;
+        } 
+        .new{
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 17px;
+            width: 100%;
+        }
+        .page{
+            margin-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            
+        }
+        .page a{
+            color:black;
+            text-decoration: none;
+            
+        }
+        .page a:hover{
+            text-decoration: underline;
+        }    
+    </style>
+</head>
+<body>
+    <div class="h">
+        <h1>facebook</h1>
+        <p>Facebook помогает вам всегда<br> оставаться на связи и общаться со<br> своими знакомыми.</p>
+    </div>
+    <br><br>
+    <div>
+        <form class="f">
+            <input type="text" placeholder="Электронный адрес или номер телефона"><br><br>
+            <input type="password" placeholder="Пароль"><br><br>
+            <button class="vhod">Вход</button><br><br>
+            <a class="forgot" href="#">Забыли пароль?</a><br><br>
+            <hr>
+            <button class="new">Создать новый аккаунт</button>
+        </form>
+        <p class="page"><a href="#"><strong>Создать Страницу</strong></a> знаменитости, музыкальной группы или<br> компании.</p>
+    </div>
+</body>
+</html>
