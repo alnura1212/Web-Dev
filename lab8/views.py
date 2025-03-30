@@ -26,3 +26,12 @@ class CategoryProductsList(generics.ListAPIView):
     def get_queryset(self):
         category_id = self.kwargs['id']
         return Product.objects.filter(category_id=category_id)
+@api_view(['POST'])
+def like_product(request, pk):
+    try:
+        product = Product.objects.get(pk=pk)
+        product.likes += 1
+        product.save()
+        return Response({'status': 'success', 'likes': product.likes})
+    except Product.DoesNotExist:
+        return Response({'error': 'Product not found'}, status=404)
